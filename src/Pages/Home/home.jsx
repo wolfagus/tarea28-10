@@ -14,8 +14,6 @@ const Home = () => {
         } catch (error) {
             setError(true)
         }
-
-
     }
     useEffect(() => {
         FetchUsuario();
@@ -30,12 +28,9 @@ const Home = () => {
                     </div> 
                 )}
                 <div className="row justify-content-center ">
-                    {usuario.map((user) => (<Card key={user.id} name={user.name} email={user.email} phone={user.phone} />))}
+                    {usuario.map((user) => (<Card key={user.id} id={user.id} name={user.name} email={user.email} phone={user.phone} />))}
                 </div>
             </div>
-        </div>
-
-    )
-}
+        </div> )}
 
 export default Home
