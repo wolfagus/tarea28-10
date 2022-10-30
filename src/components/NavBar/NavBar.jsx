@@ -15,10 +15,10 @@ const NavBar = (props) => {
                             <Link to={'/'}>
                                 <button className="btn btn-success"> Home</button>
                             </Link>
-                            <Link to={'/'}>
-                                <button className="btn btn-success"> section 1</button>
+                            <Link to={'/AboutUs'}>
+                                <button className="btn btn-success mx-3"> section 1</button>
                             </Link>
-                            <Link to={'/'}>
+                            <Link to={'/NoFound'}>
                                 <button className="btn btn-success"> section 2</button>
                             </Link>
                         </div>
